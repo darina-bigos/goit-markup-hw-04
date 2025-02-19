@@ -146,7 +146,9 @@ a {
     url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: top left;
-  background-size: cover;
+  background-size: contain;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .page-title {
@@ -178,15 +180,24 @@ a {
   margin: 0 auto;
 }
 
-.page-button:hover {
-  background: #404bbf;
-}
-
+.page-button:hover,
 .page-button:focus {
   background: #404bbf;
 }
 
 /* advant */
+
+.box-adwant-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  gap: 24px;
+  padding: 24px 0;
+}
 
 .section-advant {
   background-color: #ffffff;
@@ -238,6 +249,8 @@ a {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .list-name {
@@ -275,8 +288,35 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  margin-bottom: 8px;
+}
+.list-team-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
 
+.item-team-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+.icon-team {
+  fill: #fff;
+}
+.link-icon-team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
 /* portfolio */
 
 .portfolio {
@@ -329,6 +369,10 @@ a {
   padding: 100px 0;
 }
 
+.container-footer {
+  display: flex;
+  gap: 120px;
+}
 .logo-footer {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -350,4 +394,16 @@ a {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+}
+
+.text-social {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.footer-social-list {
+  gap: 16px;
 }
