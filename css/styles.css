@@ -166,8 +166,8 @@ a {
     ),
     url(../images/people-office.jpg);
   background-repeat: no-repeat;
-  background-position: top left;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -213,6 +213,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 112px;
   background-color: #f4f4fd;
   border: 1px solid #8e8f99;
   border-radius: 4px;
@@ -334,11 +335,11 @@ a {
 }
 
 .icon-team {
-  fill: #fff;
+  fill: #f4f4fd;
 }
 .link-icon-team:hover,
 .link-icon-team:focus {
-  background-color: #31d0aa;
+  background-color: #404bbf;
 }
 
 /* portfolio */
