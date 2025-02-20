@@ -377,11 +377,11 @@ a {
   overflow: hidden;
 }
 
-.item-portfolio:hover.overley,
-.item-portfolio:focus.overley {
+.item-portfolio:hover .overlay,
+.item-portfolio:focus .overlay {
   transform: translateY(0%);
 }
-.overley {
+.overlay {
   position: absolute;
   top: 0;
   font-size: 16px;
